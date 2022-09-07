@@ -57,7 +57,7 @@
 
     $(document).ready(function(){
       $.ajax({
-        url: "http://localhost/rstl_pm/tspot/getActiveAC",
+        url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/tspot/getActiveAC",
         method: "GET",
         success: function(data) {
           

@@ -66,8 +66,8 @@
 	$('.viewIti').click(function(){
 	  	var id = $(this).attr('id');
 		// console.log(id);
-		 $("#reloadDiv").load("http://localhost/rstl_pm/main/getOneItinerary",{id:id});
-		 // $("#reloadDiv").load("http://localhost/rstl_pm/main/getOneFarm",{id:id});
+		 $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getOneItinerary",{id:id});
+		 // $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getOneFarm",{id:id});
 	        // // alert($(this).attr("class"));
 	        // alert('j');
 	    });
@@ -210,8 +210,8 @@
 	  $('.viewFarm').click(function(){
     	  	var id = $(this).parents('ul:first').attr('id');
         	console.log(id);
-        	 $("#reloadDiv").load("http://localhost/rstl_pm/main/getOneFarm",{id:id});
-        	 // $("#reloadDiv").load("http://localhost/rstl_pm/main/getOneFarm",{id:id});
+        	 $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getOneFarm",{id:id});
+        	 // $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getOneFarm",{id:id});
 		        // // alert($(this).attr("class"));
 		        // alert('j');
 		    });

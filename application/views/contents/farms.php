@@ -94,8 +94,8 @@
     	  $('.viewFarm').click(function(){
     	  	var id = $(this).parents('ul:first').attr('id');
         	console.log(id);
-        	 $("#reloadDiv").load("http://localhost/rstl_pm/main/getOneFarm",{id:id});
-        	 // $("#reloadDiv").load("http://localhost/rstl_pm/main/getOneFarm",{id:id});
+        	 $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getOneFarm",{id:id});
+        	 // $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getOneFarm",{id:id});
 		        // // alert($(this).attr("class"));
 		        // alert('j');
 		    });
@@ -123,15 +123,15 @@
 		$('.'+splitString+'momodal').modal('hide');
 		// alert(splitString);
     $.ajax({
-		// url: "http://localhost/rstl_pm/main/deleteFarm",
-		url: "http://localhost/rstl_pm/main/deleteFarm",
+		// url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/deleteFarm",
+		url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/deleteFarm",
 		type: "POST",
 		data: {"data":splitString},
 		success: function(data){
 			// alert(data);
       $('.modal-backdrop').remove() // removes the grey overlay.
 			$("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
-			// $("#reloadDiv").load("http://localhost/rstl_pm/main/getFarm");
+			// $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
 		}
 	});
   });

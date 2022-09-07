@@ -160,7 +160,7 @@
         	$.ajax({
 				
 				
-          url: "http://localhost/rstl_pm/main/mapdata",
+          url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/mapdata",
           method: "GET",
           
 				success: function(data){

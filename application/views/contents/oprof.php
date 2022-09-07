@@ -61,7 +61,7 @@
       $('.viewOwner').click(function(){
         $("#bc4").show();
         var id = $(this).parents('ul:first').attr('id');
-      $("#profile").load("http://localhost/rstl_pm/profile/oneProfile",{id:id,stat:'1'});
+      $("#profile").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/profile/oneProfile",{id:id,stat:'1'});
       // alert(id);
     });
 
