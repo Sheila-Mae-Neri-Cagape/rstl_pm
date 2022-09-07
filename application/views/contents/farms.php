@@ -130,7 +130,7 @@
 		success: function(data){
 			// alert(data);
       $('.modal-backdrop').remove() // removes the grey overlay.
-			$("#reloadDiv").load("http://localhost/rstl_pm/main/getFarm");
+			$("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
 			// $("#reloadDiv").load("http://localhost/rstl_pm/main/getFarm");
 		}
 	});
