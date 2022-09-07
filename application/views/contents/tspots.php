@@ -186,7 +186,7 @@
           data: {"data":acdata},
           success: function(data){
             console.log(data);
-            $("#reloadDiv").load("http://localhost/rstl_pm/main/getTspots");
+            $("#reloadDiv").load('http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/');
             // $("#reloadDiv").load("http://localhost/rstl_pm/main/getFarm");
             var fade_in = function() {
               $("#myACModal").modal('hide');
@@ -227,7 +227,7 @@
     	  $('.viewAC').click(function(){
     	  	var id = $(this).parents('ul:first').attr('id');
         	console.log(id);
-        	 $("#reloadDiv").load("http://localhost/rstl_pm/tspot/getOneTspot",{id:id});
+        	 $("#reloadDiv").load('http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/tspot/getOneTspot',{id:id});
         	 // $("#reloadDiv").load("http://localhost/rstl_pm/main/getOneFarm",{id:id});
 		        // // alerttt($(this).attr("class"));
 		        // alerttt('j');
@@ -252,12 +252,12 @@
       		console.log(splitString);
           $.ajax({
       		// url: "http://localhost/rstl_pm/main/deleteAC",
-      		url: "http://localhost/rstl_pm/tspot/delTspot",
+      		url: 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/tspot/delTspot',
       		type: "POST",
       		data: {"data":splitString},
       		success: function(data){
       			//alert(data);
-      			$("#reloadDiv").load("http://localhost/rstl_pm/main/getTspots");
+      			$("#reloadDiv").load('http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/main/getTspots');
       			// $("#reloadDiv").load("http://localhost/rstl_pm/main/getFarm");
         		var fade_in = function() {
                 $("#myACModal").modal('hide');
