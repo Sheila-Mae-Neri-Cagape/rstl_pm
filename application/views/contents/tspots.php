@@ -180,7 +180,7 @@
         var acdata = new Array(code,name,mfg,model,sn,loc);
         
         $.ajax({
-          url: "http://localhost/rstl_pm/tspot/addTspot",
+          url: 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/tspot/addTspot',
           // url: "http://localhost/rstl_pm/tspot/addTspot",
           type: "POST",
           data: {"data":acdata},
