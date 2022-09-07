@@ -57,10 +57,10 @@
 
     $(document).ready(function(){
       $.ajax({
-        url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/tspot/getActiveAC",
+        url: "http://"+window.location.hostname+"/rstl_pm/tspot/getActiveAC",
         method: "GET",
         success: function(data) {
-          
+          console.log(data);
           data2 = JSON.parse(data);
           
           var xValues = new Array();

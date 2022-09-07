@@ -45,7 +45,7 @@
 		</style>
 	</head>
 	<body>
-		<!--
+		<!
 		Author: arsho
 		Facebook: https://www.facebook.com/ars.shovon
 		Project: Nearby Hospital using Google Map and Geolocation API.
@@ -155,7 +155,7 @@
      ?> -->
 
     <!-- <script type="text/javascript" src="../web/js/js/jquery.min.js"></script> -->
-<!--  <script type="text/javascript" src="<?= base_url('assets/js/jquery.min.js');?>"></script>
+<!--
     <script type="text/javascript">
         	$.ajax({
 				

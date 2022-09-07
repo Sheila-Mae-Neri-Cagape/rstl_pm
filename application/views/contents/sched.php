@@ -238,9 +238,10 @@ a:hover {
       
       
        $('.record').click(function(){
-          var id = $(this).attr('id');
-          console.log(id);
-           $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/tspot/getOneTspot",{id:id});
+        var id = $(this).attr('id');
+          //console.log(id);
+          //console.log(window.location.hostname);
+           $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:id});
           // alert(id);
         });
     </script>
