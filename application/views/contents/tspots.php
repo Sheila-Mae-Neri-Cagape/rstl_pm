@@ -1,5 +1,9 @@
+ <script>
+document.getElementById("demo").innerHTML = "The full URL of this page is:<br>" + window.location.hostname;
+</script>
  <div class="row col-md-12 text-center " style="text-align:center">
   <div class="row col-md-12">
+  <p id="demo"></p>
   <h3 class="text-center">DEPARTMENT OF SCIENCE AND TECHNOLOGY</h3>
   <h4 class="text-center">Regional Office No. X</h4>
   <hr>  
