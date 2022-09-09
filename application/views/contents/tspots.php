@@ -181,13 +181,11 @@
         
         $.ajax({
           url: 'http://'+window.location.hostname+'/rstl_pm/tspot/addTspot',
-          // url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/tspot/addTspot",
           type: "POST",
           data: {"data":acdata},
           success: function(data){
             console.log(data);
             $("#reloadDiv").load('http://'+window.location.hostname+'/rstl_pm/main/getTspots');
-            // $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
             var fade_in = function() {
               $("#myACModal").modal('hide');
               $('.modal-backdrop').remove() // removes the grey overlay.
@@ -228,7 +226,6 @@
     	  	var id = $(this).parents('ul:first').attr('id');
         	console.log(id);
         	 $("#reloadDiv").load('http://'+window.location.hostname+'/rstl_pm/tspot/getOneTspot',{id:id});
-        	 // $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getOneFarm",{id:id});
 		        // // alerttt($(this).attr("class"));
 		        // alerttt('j');
 		    });
@@ -251,14 +248,12 @@
       		$('.'+splitString+'acdelmodal').modal('hide');
       		console.log(splitString);
           $.ajax({
-      		// url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/deleteAC",
       		url: 'http://'+window.location.hostname+'/rstl_pm/tspot/delTspot',
       		type: "POST",
       		data: {"data":splitString},
       		success: function(data){
       			//alert(data);
       			$("#reloadDiv").load('http://'+window.location.hostname+'/rstl_pm/main/getTspots');
-      			// $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
         		var fade_in = function() {
                 $("#myACModal").modal('hide');
                 

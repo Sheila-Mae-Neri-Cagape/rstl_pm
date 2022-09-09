@@ -503,7 +503,7 @@
 	    $( ".modal-btn-close" ).click();
 	    console.log(form_data);                             
 	    $.ajax({
-	        url: 'http://"+window.location.hostname+"/rstl_pm/upload.php', // <-- point to server-side PHP script 
+	        url: 'http://'+window.location.hostname+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
 	        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
 	        cache: false,
 	        contentType: false,
@@ -550,7 +550,7 @@
 		// alert(data);
 		$.ajax({
 		    type: 'GET',
-		    url: 'http://"+window.location.hostname+"/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
+		    url: 'http://'+window.location.hostname+'/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
 		    success: function(data) {
 		    	// alert(data);
 		    	$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
@@ -747,7 +747,6 @@
 
     	var actdetails = new Array(op,date,remarks,pb,id);
     	$.ajax({
-			// url: "http://"+window.location.hostname+"/dot/upload.php",
 			url: "http://"+window.location.hostname+"/rstl_pm/tspot/addMaintenance",
 			type: "POST",
 			data: {"data":actdetails},
