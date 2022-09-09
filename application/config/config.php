@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = ($_SERVER['HTTP_HOST'] == 'pm.region10.dost.gov.ph' ? 'https://'.$_SERVER['HTTP_HOST'].'/rstl_pm/' : 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/');
-
+//$config['base_url'] = ($_SERVER['HTTP_HOST'] == 'pm.region10.dost.gov.ph' ? 'https://'.$_SERVER['HTTP_HOST'].'/rstl_pm/' : 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/');
+$config['base_url'] = 'http://122.53.79.156:8082/rstl_pm/';
 /*
 |--------------------------------------------------------------------------
 | Index File
