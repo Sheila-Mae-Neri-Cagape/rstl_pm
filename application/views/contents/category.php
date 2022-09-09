@@ -152,7 +152,7 @@
       
     $(".type").on('click', function(){
       console.log($(this).attr('id'));
-      $("#profile").load('http://'+window.location.hostname+'/rstl_pm/tourismfarmcategory/oneCategory');
+      $("#profile").load('http://'+window.location.host+'/rstl_pm/tourismfarmcategory/oneCategory');
     });
 
     $(".edittype").on('click', function(){
@@ -184,13 +184,13 @@
       } else {
         console.log(catname);
         $.ajax({
-          url: 'http://'+window.location.hostname+'/rstl_pm/tourismfarmcategory/addNewCategory',
+          url: 'http://'+window.location.host+'/rstl_pm/tourismfarmcategory/addNewCategory',
           type: "POST",
           data: {"data":catname},
           success: function(data){
             console.log(data);
             $("#myCatModal").modal('hide');
-            $("#reloadDiv").load('http://'+window.location.hostname+'/rstl_pm/tourismfarmcategory/tourCateg');
+            $("#reloadDiv").load('http://'+window.location.host+'/rstl_pm/tourismfarmcategory/tourCateg');
             var fade_in = function() {
             // $(".alert").fadeOut().empty();
             $('.alert').text( "Successfully updated activity." );

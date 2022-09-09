@@ -1,6 +1,3 @@
- <script>
-document.getElementById("demo").innerHTML = "The full URL of this page is:<br>" + window.location.hostname;
-</script>
  <div class="row col-md-12 text-center " style="text-align:center">
   <div class="row col-md-12">
   <p id="demo"></p>
@@ -184,12 +181,12 @@ document.getElementById("demo").innerHTML = "The full URL of this page is:<br>" 
         var acdata = new Array(code,name,mfg,model,sn,loc);
         
         $.ajax({
-          url: 'http://'+window.location.hostname+'/rstl_pm/tspot/addTspot',
+          url: 'http://'+window.location.host+'/rstl_pm/tspot/addTspot',
           type: "POST",
           data: {"data":acdata},
           success: function(data){
             console.log(data);
-            $("#reloadDiv").load('http://'+window.location.hostname+'/rstl_pm/main/getTspots');
+            $("#reloadDiv").load('http://'+window.location.host+'/rstl_pm/main/getTspots');
             var fade_in = function() {
               $("#myACModal").modal('hide');
               $('.modal-backdrop').remove() // removes the grey overlay.
@@ -229,7 +226,7 @@ document.getElementById("demo").innerHTML = "The full URL of this page is:<br>" 
     	  $('.viewAC').click(function(){
     	  	var id = $(this).parents('ul:first').attr('id');
         	console.log(id);
-        	 $("#reloadDiv").load('http://'+window.location.hostname+'/rstl_pm/tspot/getOneTspot',{id:id});
+        	 $("#reloadDiv").load('http://'+window.location.host+'/rstl_pm/tspot/getOneTspot',{id:id});
 		        // // alerttt($(this).attr("class"));
 		        // alerttt('j');
 		    });
@@ -252,12 +249,12 @@ document.getElementById("demo").innerHTML = "The full URL of this page is:<br>" 
       		$('.'+splitString+'acdelmodal').modal('hide');
       		console.log(splitString);
           $.ajax({
-      		url: 'http://'+window.location.hostname+'/rstl_pm/tspot/delTspot',
+      		url: 'http://'+window.location.host+'/rstl_pm/tspot/delTspot',
       		type: "POST",
       		data: {"data":splitString},
       		success: function(data){
       			//alert(data);
-      			$("#reloadDiv").load('http://'+window.location.hostname+'/rstl_pm/main/getTspots');
+      			$("#reloadDiv").load('http://'+window.location.host+'/rstl_pm/main/getTspots');
         		var fade_in = function() {
                 $("#myACModal").modal('hide');
                 

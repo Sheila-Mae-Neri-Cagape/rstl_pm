@@ -94,7 +94,7 @@
     	  $('.viewFarm').click(function(){
     	  	var id = $(this).parents('ul:first').attr('id');
         	console.log(id);
-        	 $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getOneFarm",{id:id});
+        	 $("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/main/getOneFarm",{id:id});
 		        // // alert($(this).attr("class"));
 		        // alert('j');
 		    });
@@ -122,13 +122,13 @@
 		$('.'+splitString+'momodal').modal('hide');
 		// alert(splitString);
     $.ajax({
-		url: "http://"+window.location.hostname+"/rstl_pm/main/deleteFarm",
+		url: "http://"+window.location.host+"/rstl_pm/main/deleteFarm",
 		type: "POST",
 		data: {"data":splitString},
 		success: function(data){
 			// alert(data);
       $('.modal-backdrop').remove() // removes the grey overlay.
-			$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getFarm");
+			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/main/getFarm");
 		}
 	});
   });

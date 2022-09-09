@@ -392,12 +392,12 @@ visibility:visible;
 			$('.saveeditmapping').hide();
 
 			$.ajax({
-				url: "http://"+window.location.hostname+"/rstl_pm/farmowner/updateLtLng",
+				url: "http://"+window.location.host+"/rstl_pm/farmowner/updateLtLng",
 				type: "POST",
 				data: {"data":loc},
 				success: function(data){
 					// alert(data);
-					$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:farm_id});
+					$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:farm_id});
 					var fade_in = function() {
 						  // $(".alert").fadeOut().empty();
 						  $('.alert').text( data);
@@ -735,12 +735,12 @@ visibility:visible;
 	  $('.'+splitString+'im-modal').modal('hide');
 		// alert(delact);
     $.ajax({
-		url: "http://"+window.location.hostname+"/rstl_pm/farmowner/deleteImage",
+		url: "http://"+window.location.host+"/rstl_pm/farmowner/deleteImage",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+			$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 			var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully moved to trash." );
@@ -796,13 +796,13 @@ visibility:visible;
       var delaccom = new Array(splitString,farm_id);
 		$('.'+splitString+'modal').modal('hide');
     $.ajax({
-		url: "http://"+window.location.hostname+"/rstl_pm/farmowner/deleteAccom",
+		url: "http://"+window.location.host+"/rstl_pm/farmowner/deleteAccom",
 		type: "POST",
 		data: {"data":delaccom},
 		success: function(data){
 			
 			// alert(data);
-			$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+			$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 			var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully moved to trash." );
@@ -857,12 +857,12 @@ visibility:visible;
 		$('.'+splitString+'mi-modal').modal('hide');
 		// alert(delact);
     $.ajax({
-		url: "http://"+window.location.hostname+"/rstl_pm/farmowner/deleteActivity",
+		url: "http://"+window.location.host+"/rstl_pm/farmowner/deleteActivity",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+			$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 			var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully moved to trash." );
@@ -943,11 +943,11 @@ visibility:visible;
 			var accomdetails = new Array(accomname, accomdescription, accomfee,id,farm_id);
 
 			$.ajax({
-				url: "http://"+window.location.hostname+"/rstl_pm/farmowner/updateAccommodation",
+				url: "http://"+window.location.host+"/rstl_pm/farmowner/updateAccommodation",
 				type: "POST",
 				data: {"data":accomdetails},
 				success: function(data){
-					$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+					$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 					var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully updated accommodation." );
@@ -1023,11 +1023,11 @@ visibility:visible;
 			var actdetails = new Array(actname, actdescription, actfee,id,farm_id);
 
 			$.ajax({
-				url: "http://"+window.location.hostname+"/rstl_pm/farmowner/updateActivity",
+				url: "http://"+window.location.host+"/rstl_pm/farmowner/updateActivity",
 				type: "POST",
 				data: {"data":actdetails},
 				success: function(data){
-					$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+					$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 					var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully updated activity." );
@@ -1082,12 +1082,12 @@ visibility:visible;
 
 	    	var accdetails = new Array(accname, accdescription, accfee,id);
 	    	$.ajax({
-				url: "http://"+window.location.hostname+"/rstl_pm/farmowner/addAccommodation",
+				url: "http://"+window.location.host+"/rstl_pm/farmowner/addAccommodation",
 				type: "POST",
 				data: {"data":accdetails},
 				success: function(data){
 					// alert(data);
-					$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+					$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 					var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully added new accommodation." );
@@ -1144,12 +1144,12 @@ visibility:visible;
 
 	    	var actdetails = new Array(actname, actdescription, actfee,id);
 	    	$.ajax({
-				url: "http://"+window.location.hostname+"/rstl_pm/farmowner/addActivity",
+				url: "http://"+window.location.host+"/rstl_pm/farmowner/addActivity",
 				type: "POST",
 				data: {"data":actdetails},
 				success: function(data){
 					// alert(datareloadDiv);
-					$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+					$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 					var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully added new activity." );
@@ -1221,12 +1221,12 @@ visibility:visible;
 	    	// alert(frm_info);
 	 		
 	 		$.ajax({
-				url: "http://"+window.location.hostname+"/rstl_pm/farmowner/saveUpdateFarm",
+				url: "http://"+window.location.host+"/rstl_pm/farmowner/saveUpdateFarm",
 				type: "POST",
 				data: {"data":frmdetails},
 				success: function(data){
 					// alert(data);
-					$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+					$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 					var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully updated farm details." );
@@ -1317,7 +1317,7 @@ visibility:visible;
 		}).then(function(response){
 			// $('#canvas').html(response);
 			$.ajax({
-				url: "http://"+window.location.hostname+"/rstl_pm/upload.php",
+				url: "http://"+window.location.host+"/rstl_pm/upload.php",
 				type: "POST",
 				data: {"featimage":response},
 				success: function(data){
@@ -1332,10 +1332,10 @@ visibility:visible;
 		// alert(data);
 		$.ajax({
 		    type: 'GET',
-		    url: 'http://'+window.location.hostname+'/rstl_pm/farmowner/addFeatPic?link='+data+'&id='+id+'&desc='+imgDe,
+		    url: 'http://'+window.location.host+'/rstl_pm/farmowner/addFeatPic?link='+data+'&id='+id+'&desc='+imgDe,
 		    success: function(data) {
 		    	// alert(data);
-		    	$("#reloadDivFarm").load("http://"+window.location.hostname+"/rstl_pm/farmowner/getOneFarm",{id:data});
+		    	$("#reloadDivFarm").load("http://"+window.location.host+"/rstl_pm/farmowner/getOneFarm",{id:data});
 		    	var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully added new photo." );
