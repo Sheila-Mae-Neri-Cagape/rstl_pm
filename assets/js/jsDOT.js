@@ -8,14 +8,14 @@ $(document).ready(function(){
       });
 
     $("#farms").click(function(){
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getFarm");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getFarm");
        
     });
 
      //$("#farms").click();
  
     $("#tspots").click(function(){
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getTspots");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getTspots");
         
     });
 
@@ -24,14 +24,14 @@ $(document).ready(function(){
     $("#feeds").click(function(){
         // alert("feeds");
 
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getFeeds");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getFeeds");
 
 
     });
 
     $("#oprof").click(function(){
         // alert("feeds");
-        //$("#reloadDiv").load("http://localhost/rstl_pm/profile/allprofile");
+        //$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/profile/allprofile");
 
         var today = new Date();
 
@@ -39,32 +39,32 @@ $(document).ready(function(){
         //console.log(year);
         //console.log(today);
 
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getFeeds",{date:year});
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getFeeds",{date:year});
     });
 
     // $("#uprof").click(function(){
     //     // alert("feeds");
-    //     $("#reloadDiv").load("http://localhost/rstl_pm/profile/userProfile");
+    //     $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/profile/userProfile");
     // });
 
     $("#mforms").click(function(){
         // alert("feeds");
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getForms");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getForms");
     });
 
     $("#routes").click(function(){
         // alert("feeds");
-        $("#reloadDiv").load("http://localhost/rstl_pm/route/routes");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/route/routes");
     });
 
     $("#acuchart").click(function(){
         // alert("stats");
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getCharts");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getCharts");
     });
 
     $("#trash").click(function(){
         // alert("trash");
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getTrash");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getTrash");
     });
 
     $('.nav-list').on('click','a',function(){
@@ -79,20 +79,20 @@ $(document).ready(function(){
 $(document).ready(function(){
     const firstFarm = document.querySelector('.farmSite').getAttribute('id').split("_")[0];
     // alert(firstFarm);
-    $("#reloadDiv").load("http://localhost/rstl_pm/main/getonefarm",{id:firstFarm});
+    $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getonefarm",{id:firstFarm});
 
     $('.farmSite').on('click', function(){
         farm_id = $(this).attr("id");
         const splitString = farm_id.split("_")[0];
         // alert(splitString);
 
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getonefarm",{id:splitString});
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getonefarm",{id:splitString});
 
     });
 
     $("#trashh").click(function(){
          // alert("trash");
-        $("#reloadDiv").load("http://localhost/rstl_pm/main/getTrash");
+        $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getTrash");
     });
      
 });
