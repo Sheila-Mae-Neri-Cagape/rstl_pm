@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2022 at 10:25 AM
+-- Generation Time: Sep 14, 2022 at 10:36 AM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -43,8 +43,8 @@ CREATE TABLE `tbl_ac_attachments` (
 --
 
 INSERT INTO `tbl_ac_attachments` (`ac_attach_id`, `ac_id`, `file_path`, `file_description`, `file_type`, `date_created`, `status`) VALUES
-(37, 7, 'http://122.53.79.156:8082/rstl_pm/images/16541570062022-Jun-Thu-2022 RSTL Staff Accomplishment Report Format.pdf', 'Manual', NULL, '2022-06-02 16:03:27', 0),
-(38, 7, 'http://122.53.79.156:8082/rstl_pm/images/16541571692022-Jun-Thu-clavano-civil form2 dtr(1-31) bir (1).pdf', 'Maintenance Report', NULL, '2022-06-02 16:06:09', 0),
+(37, 0, 'http://122.53.79.156:8082/rstl_pm/images/16541570062022-Jun-Thu-2022 RSTL Staff Accomplishment Report Format.pdf', 'Manual', NULL, '2022-06-02 16:03:27', 0),
+(38, 0, 'http://122.53.79.156:8082/rstl_pm/images/16541571692022-Jun-Thu-clavano-civil form2 dtr(1-31) bir (1).pdf', 'Maintenance Report', NULL, '2022-06-02 16:06:09', 0),
 (39, 7, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-06-09 15:28:30', 1),
 (40, 0, 'http://122.53.79.156:8082/rstl_pm/images/16563125152022-Jun-Mon-002.jpg', 'Menu', NULL, '2022-06-27 14:48:35', 1);
 
