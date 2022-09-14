@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 $obj_pdf = new TCPDF('P', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 $obj_pdf->SetCreator(PDF_CREATOR);
 /**$obj_pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, '', '');*/
@@ -85,5 +85,5 @@ $content = ob_get_contents();
 ob_end_clean();
 $obj_pdf->writeHTML($content, true, false, true, false, '');
 $fileName = $docTitle.'.pdf';
-$obj_pdf->Output($fileName, 'I');
+$obj_pdf->Output($fileName, 'FI');
 exit;
