@@ -240,7 +240,9 @@ INSERT INTO `tbl_ac_attachments` (`ac_attach_id`, `ac_id`, `file_path`, `file_de
 (231, 61, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
 (232, 61, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:17:09', 1),
 (233, 61, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:17:21', 1),
-(234, 61, 'http://122.53.79.156:8082/rstl_pm/images/16632201882022-Sep-Thu-Q3 2022.pdf', 'Q3 2022', NULL, '2022-09-15 13:40:04', 1);
+(234, 61, 'http://122.53.79.156:8082/rstl_pm/images/16632201882022-Sep-Thu-Q3 2022.pdf', 'Q3 2022', NULL, '2022-09-15 13:40:04', 1),
+(235, 62, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(236, 62, 'http://122.53.79.156:8082/rstl_pm/images/16632201882022-Sep-Thu-Q3 2022.pdf', 'Q3 2022', NULL, '2022-09-15 13:40:04', 1);
 
 --
 -- Indexes for dumped tables
