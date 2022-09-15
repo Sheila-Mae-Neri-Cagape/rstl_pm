@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
    $(document).ajaxStart(function(){
         $("#wait").css("display", "block");
