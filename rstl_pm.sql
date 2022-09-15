@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 23, 2022 at 10:37 AM
+-- Generation Time: Sep 15, 2022 at 05:25 AM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -43,10 +43,149 @@ CREATE TABLE `tbl_ac_attachments` (
 --
 
 INSERT INTO `tbl_ac_attachments` (`ac_attach_id`, `ac_id`, `file_path`, `file_description`, `file_type`, `date_created`, `status`) VALUES
-(37, 7, 'http://localhost/rstl_pm/images/16541570062022-Jun-Thu-2022 RSTL Staff Accomplishment Report Format.pdf', 'Manual', NULL, '2022-06-02 16:03:27', 1),
-(38, 7, 'http://localhost/rstl_pm/images/16541571692022-Jun-Thu-clavano-civil form2 dtr(1-31) bir (1).pdf', 'Maintenance Report', NULL, '2022-06-02 16:06:09', 1),
-(39, 7, 'http://localhost/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-06-09 15:28:30', 1),
-(40, 0, 'http://localhost/rstl_pm/images/16563125152022-Jun-Mon-002.jpg', 'Menu', NULL, '2022-06-27 14:48:35', 1);
+(37, 0, 'http://122.53.79.156:8082/rstl_pm/images/16541570062022-Jun-Thu-2022 RSTL Staff Accomplishment Report Format.pdf', 'Manual', NULL, '2022-06-02 16:03:27', 0),
+(38, 0, 'http://122.53.79.156:8082/rstl_pm/images/16541571692022-Jun-Thu-clavano-civil form2 dtr(1-31) bir (1).pdf', 'Maintenance Report', NULL, '2022-06-02 16:06:09', 0),
+(39, 7, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-06-09 15:28:30', 1),
+(40, 0, 'http://122.53.79.156:8082/rstl_pm/images/16563125152022-Jun-Mon-002.jpg', 'Menu', NULL, '2022-06-27 14:48:35', 1),
+(41, 2, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(42, 3, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(43, 4, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(44, 5, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(45, 6, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(46, 8, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(47, 9, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(48, 12, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(49, 13, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(50, 14, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(51, 15, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(52, 16, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:43', 1),
+(53, 18, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(54, 19, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(55, 21, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(56, 23, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(57, 24, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(58, 25, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(59, 26, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(60, 27, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(61, 28, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(62, 29, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(63, 30, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(64, 31, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(65, 32, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(66, 33, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(67, 34, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(68, 35, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(69, 36, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(70, 37, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(71, 38, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(72, 39, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(73, 40, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(74, 41, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(75, 42, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(76, 43, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(77, 44, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(78, 45, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:44', 1),
+(79, 46, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(80, 47, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(81, 48, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(82, 49, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(83, 50, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(84, 51, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(85, 52, 'http://122.53.79.156:8082/rstl_pm/images/16547597102022-Jun-Thu-Q2 Billing Statement.pdf', 'Q2 Billing Statement', NULL, '2022-09-15 10:54:45', 1),
+(86, 0, 'http://localhost/rstl_pm/16632115772022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:12:57', 1),
+(87, 0, 'http://localhost/rstl_pm/16632116142022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:13:34', 1),
+(88, 7, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:17:09', 1),
+(89, 7, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:17:21', 1),
+(90, 2, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(91, 3, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(92, 4, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(93, 5, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(94, 6, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(95, 8, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(96, 9, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(97, 12, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(98, 13, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(99, 14, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(100, 15, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(101, 16, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:37', 1),
+(102, 18, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(103, 19, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(104, 21, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(105, 23, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(106, 24, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(107, 25, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(108, 26, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(109, 27, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(110, 28, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(111, 29, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(112, 30, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(113, 31, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(114, 32, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(115, 33, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(116, 34, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(117, 35, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(118, 36, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(119, 37, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(120, 38, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(121, 39, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(122, 40, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(123, 41, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(124, 42, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(125, 43, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:38', 1),
+(126, 44, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(127, 45, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(128, 46, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(129, 47, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(130, 48, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(131, 49, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(132, 50, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(133, 51, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(134, 52, 'http://122.53.79.156:8082/rstl_pm/images/16632118292022-Sep-Thu-Q2 2020 Billing Statement.pdf', 'Q2 2020 Billing Statement', NULL, '2022-09-15 11:18:39', 1),
+(135, 2, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(136, 3, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(137, 4, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(138, 5, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(139, 6, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(140, 8, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(141, 9, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(142, 12, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(143, 13, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(144, 14, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(145, 15, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:01', 1),
+(146, 16, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(147, 18, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(148, 19, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(149, 21, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(150, 23, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(151, 24, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(152, 25, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(153, 26, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(154, 27, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(155, 28, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(156, 29, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(157, 30, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(158, 31, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(159, 32, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(160, 33, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(161, 34, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:02', 1),
+(162, 35, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(163, 36, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(164, 37, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(165, 38, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(166, 39, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(167, 40, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(168, 41, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(169, 42, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(170, 43, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(171, 44, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(172, 45, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(173, 46, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(174, 47, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(175, 48, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:03', 1),
+(176, 49, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:04', 1),
+(177, 50, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:04', 1),
+(178, 51, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:04', 1),
+(179, 52, 'http://122.53.79.156:8082/rstl_pm/images/16632118412022-Sep-Thu-Q1 2021 Billing Statement.pdf', 'Q1 2021 Billing Statement', NULL, '2022-09-15 11:19:04', 1);
 
 -- --------------------------------------------------------
 
@@ -300,7 +439,55 @@ INSERT INTO `tbl_ac_maint_record` (`id`, `ac_id`, `date_added`, `op_performed`, 
 (237, 51, '2021-06-01 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-05-24 09:05:03', 1),
 (238, 51, '2021-10-09 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-05-24 09:05:12', 1),
 (239, 51, '2022-04-23 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-05-24 09:05:22', 1),
-(240, 52, '2022-04-23 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-05-27 11:38:36', 1);
+(240, 52, '2022-04-23 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-05-27 11:38:36', 1),
+(241, 7, '0000-00-00 00:00:00', '', '', '', '2022-09-07 16:52:58', 0),
+(242, 7, '1970-01-01 00:00:00', 'afaf', '', '', '2022-09-07 16:53:04', 0),
+(243, 7, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:46:59', 1),
+(244, 51, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:47:34', 1),
+(245, 8, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:47:46', 1),
+(246, 2, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(247, 3, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(248, 4, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(249, 5, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(250, 6, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(251, 9, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(252, 12, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(253, 13, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(254, 14, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(255, 15, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:15', 1),
+(256, 16, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(257, 18, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(258, 19, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(259, 21, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(260, 23, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(261, 24, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(262, 25, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(263, 26, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(264, 27, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(265, 28, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(266, 29, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(267, 30, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(268, 31, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(269, 32, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(270, 33, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(271, 34, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(272, 35, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:16', 1),
+(273, 36, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(274, 37, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(275, 38, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(276, 39, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(277, 40, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(278, 41, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(279, 42, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(280, 43, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(281, 44, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(282, 45, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(283, 46, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(284, 47, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(285, 48, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(286, 49, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(287, 50, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1),
+(288, 52, '2022-07-16 00:00:00', 'General Cleaning / PM', 'GOOD WORKING CONDITION', 'VVP', '2022-09-15 10:51:17', 1);
 
 -- --------------------------------------------------------
 
@@ -358,7 +545,7 @@ INSERT INTO `tbl_aircon` (`id`, `code_no`, `equipment_name`, `manufacturer`, `ty
 (4, 'RO-ORD-ACU-1.4', 'Air conditioning Unit', '', 'Window Type, Sharp - 1.0hp', '', NULL, 'ORD Office', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:16:56', 1, 1),
 (5, 'RO-ORD-ACU-1.2', 'Air conditioning Unit', '', 'Window Type, Sharp - 1.0hp', '', NULL, 'ORD Office', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:17:54', 1, 1),
 (6, 'RO-ORD-ACU-1.3', 'Air conditioning Unit', '', 'Window Type, Sharp - 1.0hp', '', NULL, 'ORD Office', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:19:46', 1, 1),
-(7, 'RO-COA-ACU-1.1', 'Air conditioning Unit', '', 'Window Type, National - 2.0 hp', '', NULL, 'COA Office', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:21:36', 1, 1),
+(7, 'RO-COA-ACU-1.1', 'Air conditioning Unit', 'Carrier', 'Window Type, National - 2.0 hp', 'Property No.: RO-AC-ACEL-001', NULL, 'COA Office', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:21:36', 1, 1),
 (8, 'RO-FASD-ACU-1.1', 'Air conditioning Unit', '', 'Window Type, LG - 1.0hp', '', NULL, 'FASD Office', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:24:08', 1, 1),
 (9, 'RO-FASD-ACU-1.2', 'Air conditioning Unit', '', 'Window Type, Sharp - 1.0hp', '', NULL, 'FASD Office', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:27:34', 1, 1),
 (10, 'saf', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-19 11:28:15', 1, 0),
@@ -402,12 +589,16 @@ INSERT INTO `tbl_aircon` (`id`, `code_no`, `equipment_name`, `manufacturer`, `ty
 (48, 'RO-RSTL-ACU-1.14', 'Air conditioning Unit', '', 'Split Type, Koppel - 2.0 hp', 'LB380(338)', NULL, 'MIC Drinking Lab', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-20 08:53:45', 1, 1),
 (49, 'RO-RSTL-ACU-1.16', 'Air conditioning Unit', '', 'Window Type, National - 2.0 hp', '4D1705557', NULL, 'CHE Instrumentation Room', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-20 08:53:47', 1, 1),
 (50, 'RO-RSTL-ACU-1.17', 'Air conditioning Unit', '', 'Window Type, National - 2.0 hp', '741614991', NULL, 'CHE Instrumentation Room', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-20 08:53:49', 1, 1),
-(51, 'RO-DORM-ACU-1.1', 'Air conditioning Unit', '', 'Window Type, Sharp - 1.0hp', 'P1931040663', NULL, 'DOST-X Dorm', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-20 08:53:50', 1, 1),
+(51, 'RO-DORM-ACU-1.1', 'Air conditioning Unit', 'Sharp', 'Window Type, Sharp - 1.0hp', 'P1931040663', NULL, 'DOST-X Dorm', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-20 08:53:50', 1, 1),
 (52, 'RO-RSTL-ACU-1.5', 'Air conditioning Unit', '', 'Split Type, Samsung - 2.0 hp', 'QOPJPDCD600048', NULL, 'RSTL Document Room', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-20 14:23:27', 1, 1),
 (53, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-06-02 10:15:34', 1, 0),
 (54, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-06-02 11:39:39', 1, 0),
 (55, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-06-02 16:21:21', 1, 0),
-(56, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-06-02 16:23:20', 1, 0);
+(56, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-06-02 16:23:20', 1, 0),
+(57, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-09-07 16:52:30', 1, 0),
+(58, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-09-07 16:52:42', 1, 0),
+(59, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-09-07 16:54:40', 1, 0),
+(60, '', '', '', '', '', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2022-09-07 16:56:45', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -672,11 +863,11 @@ CREATE TABLE `tbl_maint_forms` (
 --
 
 INSERT INTO `tbl_maint_forms` (`form_id`, `file_path`, `file_description`, `file_type`, `date_created`, `status`) VALUES
-(1, 'http://localhost/rstl_pm/images/MC-F1.docx', 'MC-F1 EQUIPMENT MAINTENANCE RECORD', NULL, '2022-06-27 15:30:39', 1),
-(2, 'http://localhost/rstl_pm/images/MC-F2 Request for Maintenance (For Vehicle).docx', 'MC-F2 Request for Maintenance (For Vehicle)', NULL, '2022-06-27 15:38:32', 1),
-(3, 'http://localhost/rstl_pm/images/MC-F3 Maintenance Record of ICT Equipment New.doc', 'MC-F3 Maintenance Record of ICT Equipment New', NULL, '2022-06-27 15:47:10', 1),
-(4, 'http://localhost/rstl_pm/images/ICT Record MC-F4.doc', 'MC-F4 ICT Record', NULL, '2022-06-27 15:50:14', 1),
-(5, 'http://localhost/rstl_pm/images/MC-F5, Building and Utilities Maintenance Record.doc', 'MC-F5, Building and Utilities Maintenance Record', NULL, '2022-06-28 08:56:15', 1);
+(1, 'http://122.53.79.156:8082/rstl_pm/images/MC-F1.docx', 'MC-F1 EQUIPMENT MAINTENANCE RECORD', NULL, '2022-06-27 15:30:39', 1),
+(2, 'http://122.53.79.156:8082/rstl_pm/images/MC-F2 Request for Maintenance (For Vehicle).docx', 'MC-F2 Request for Maintenance', NULL, '2022-06-27 15:38:32', 1),
+(3, 'http://122.53.79.156:8082/rstl_pm/images/MC-F3 Maintenance Record of ICT Equipment New.doc', 'MC-F3 Maintenance Record of ICT Equipment New', NULL, '2022-06-27 15:47:10', 1),
+(4, 'http://122.53.79.156:8082/rstl_pm/images/ICT Record MC-F4.doc', 'MC-F4 ICT Record', NULL, '2022-06-27 15:50:14', 1),
+(5, 'http://122.53.79.156:8082/rstl_pm/images/MC-F5, Building and Utilities Maintenance Record.doc', 'MC-F5, Building and Utilities Maintenance Record', NULL, '2022-06-28 08:56:15', 1);
 
 -- --------------------------------------------------------
 
@@ -942,12 +1133,12 @@ ALTER TABLE `tbl_maint_program`
 -- AUTO_INCREMENT for table `tbl_ac_attachments`
 --
 ALTER TABLE `tbl_ac_attachments`
-  MODIFY `ac_attach_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `ac_attach_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=180;
 --
 -- AUTO_INCREMENT for table `tbl_ac_maint_record`
 --
 ALTER TABLE `tbl_ac_maint_record`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=241;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=289;
 --
 -- AUTO_INCREMENT for table `tbl_ac_status`
 --
@@ -957,7 +1148,7 @@ ALTER TABLE `tbl_ac_status`
 -- AUTO_INCREMENT for table `tbl_aircon`
 --
 ALTER TABLE `tbl_aircon`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 --
 -- AUTO_INCREMENT for table `tbl_calibration_type`
 --

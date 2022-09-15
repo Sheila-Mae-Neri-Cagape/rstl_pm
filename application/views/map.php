@@ -30,7 +30,7 @@
 
       function getsidetrips() {
         return $.ajax({
-            url: "http://localhost/farmhunt/main/getO"
+            url: "http://"+window.location.hostname+"/farmhunt/main/getO"
         });
       }
       var infowindow = null;
@@ -45,7 +45,7 @@ function initMap() {
   // The marker, positioned at Uluru
 
 xmlhttp=new XMLHttpRequest();
-xmlhttp.open("GET","http://localhost/farmhunt/main/getTspotswAdd",false);
+xmlhttp.open("GET","http://"+window.location.hostname+"/farmhunt/main/getTspotswAdd",false);
 xmlhttp.send();
 
 var test = JSON.parse(xmlhttp.responseText);
@@ -81,7 +81,7 @@ var w = new Array();
      
     }          
     xmlhttp=new XMLHttpRequest();
-    xmlhttp.open("GET","http://localhost/farmhunt/main/getFspotswAdd",false);
+    xmlhttp.open("GET","http://"+window.location.hostname+"/farmhunt/main/getFspotswAdd",false);
     xmlhttp.send();
 
     var farmtest = JSON.parse(xmlhttp.responseText);

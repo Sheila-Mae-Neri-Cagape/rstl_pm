@@ -211,14 +211,12 @@
 		// $('.btn-default').click();
 		// alert(name+fee+desc+street+barangay+city+municipality+province);
 		$.ajax({
-			// url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/addFarm",
-			url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/addFarm",
+			url: 'http://'+window.location.host+'/rstl_pm/main/addFarm',
 			type: "POST",
 			data: {"data":loc},
 			success: function(data){
 				// console.log(data);
-				$("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
-				// $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
+				$("#reloadDiv").load('http://'+window.location.host+'/rstl_pm/main/getFarm');
 				var fade_in = function() {
 					$('#myModal').modal('hide');
 					  // $(".alert").fadeOut().empty();
@@ -267,14 +265,12 @@
 		// $('.btn-default').click();
 		// alert(name+fee+desc+street+barangay+city+municipality+province);
 		$.ajax({
-			url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/tspot/addTspot",
-			// url: "http://".$_SERVER['HTTP_HOST']."/rstl_pm/tspot/addTspot",
+			url: 'http://'+window.location.host+'/rstl_pm/tspot/addTspot',
 			type: "POST",
 			data: {"data":loc},
 			success: function(data){
 				console.log(data);
-				$("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
-				// $("#reloadDiv").load("http://".$_SERVER['HTTP_HOST']."/rstl_pm/main/getFarm");
+				$("#reloadDiv").load('http://'+window.location.host+'/rstl_pm/main/getFarm');
 				var fade_in = function() {
 					$('#myModal').modal('hide');
 					  // $(".alert").fadeOut().empty();

@@ -503,7 +503,11 @@
 	    $( ".modal-btn-close" ).click();
 	    console.log(form_data);                             
 	    $.ajax({
+<<<<<<< HEAD
 	        url: 'http://'+window.location.hostname+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
+=======
+	        url: 'http://'+window.location.host+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
+>>>>>>> b0e49ffdd3d6dc03750957b35b9a64aa04e5ff6a
 	        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
 	        cache: false,
 	        contentType: false,
@@ -550,10 +554,14 @@
 		// alert(data);
 		$.ajax({
 		    type: 'GET',
+<<<<<<< HEAD
 		    url: 'http://'+window.location.hostname+'/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
+=======
+		    url: 'http://'+window.location.host+'/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
+>>>>>>> b0e49ffdd3d6dc03750957b35b9a64aa04e5ff6a
 		    success: function(data) {
 		    	// alert(data);
-		    	$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
+		    	$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
 		    	
 		    	var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
@@ -609,12 +617,12 @@
 	  $('.'+splitString+'im-modal').modal('hide');
 		// alert(delact);
     $.ajax({
-		url: "http://"+window.location.hostname+"/rstl_pm/tspot/deleteImage",
+		url: "http://"+window.location.host+"/rstl_pm/tspot/deleteImage",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
+			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
 			var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully moved to trash." );
@@ -685,13 +693,13 @@
     	//	var tspotdetails = new Array(id,name,code,mfg,type,sn,loc);
     	//alert(st_info);
     	$.ajax({
-			// url: "http://"+window.location.hostname+"/dot/upload.php",
-			url: "http://"+window.location.hostname+"/rstl_pm/tspot/updateTspots",
+			// url: "http://"+window.location.host+"/dot/upload.php",
+			url: "http://"+window.location.host+"/rstl_pm/tspot/updateTspots",
 			type: "POST",
 			data: {"data":st_info},
 			success: function(data){
 				//alert(data);
-				$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully updated Activity details." );
@@ -747,13 +755,12 @@
 
     	var actdetails = new Array(op,date,remarks,pb,id);
     	$.ajax({
-			// url: "http://"+window.location.hostname+"/dot/upload.php",
-			url: "http://"+window.location.hostname+"/rstl_pm/tspot/addMaintenance",
+			url: "http://"+window.location.host+"/rstl_pm/tspot/addMaintenance",
 			type: "POST",
 			data: {"data":actdetails},
 			success: function(data){
 				// alert(data);
-				$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully added maintenance record." );
@@ -816,11 +823,11 @@
     	//alert(mrdetails);
 
 		$.ajax({
-			url: "http://"+window.location.hostname+"/rstl_pm/tspot/updateMR",
+			url: "http://"+window.location.host+"/rstl_pm/tspot/updateMR",
 			type: "POST",
 			data: {"data":mrdetails},
 			success: function(data){
-				$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
 				
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
@@ -875,12 +882,12 @@
 
 		// alert(delact);
     $.ajax({
-		url: "http://"+window.location.hostname+"/rstl_pm/tspot/deleteMR",
+		url: "http://"+window.location.host+"/rstl_pm/tspot/deleteMR",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
+			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
 			$('#reloadDiv').each(function(){
 				    $(this).resize();
 				});				   
@@ -933,12 +940,12 @@
 	 //alert(id);
 	 //alert(acstat);
     $.ajax({
-		url: "http://"+window.location.hostname+"/rstl_pm/tspot/updateStat",
+		url: "http://"+window.location.host+"/rstl_pm/tspot/updateStat",
 		type: "POST",
 		data: {"data":update},
 		success: function(data){
 			//alert(data);
-			$("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:data});
+			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
 			$('#reloadDiv').each(function(){
 				    $(this).resize();
 				});				   
