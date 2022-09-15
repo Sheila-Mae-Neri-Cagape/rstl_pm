@@ -52,11 +52,11 @@
 				<label>Manage</label>
 			  <!--<a id="farms" class="list-group-item active">Equipment</a> -->
 			  
-			  <a id="tspots" class="list-group-item active">ACU List</a>
-			  <a id="oprof" class="list-group-item">ACU Maintenance Schedule</a>
-			  <a id="acuchart" class="list-group-item">ACU Chart</a>
+			  <a id="tspots" class="list-group-item active" style="cursor: pointer;">ACU List</a>
+			  <a id="oprof" class="list-group-item" style="cursor: pointer;">ACU Maintenance Schedule</a>
+			  <a id="acuchart" class="list-group-item" style="cursor: pointer;">ACU Chart</a>
 			 
-			  <a id="mforms" class="list-group-item">Maintenance Forms</a>
+			  <a id="mforms" class="list-group-item" style="cursor: pointer;">Maintenance Forms</a>
 			  <!--
 			  <a id="routes" class="list-group-item">Routes</a>
 
