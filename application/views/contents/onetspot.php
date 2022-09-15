@@ -504,7 +504,7 @@
 	    console.log(form_data);                             
 	    $.ajax({
 
-	        url: 'http://'+window.location.hostname+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
+	        url: 'http://'+window.location.host+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
 
 	        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
 	        cache: false,
