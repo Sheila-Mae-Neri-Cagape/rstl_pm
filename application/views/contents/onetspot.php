@@ -553,7 +553,7 @@
 		$.ajax({
 		    type: 'GET',
 
-		    url: 'http://'+window.location.hostname+'/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
+		    url: 'http://'+window.location.host+'/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
 		    success: function(data) {
 		    	// alert(data);
 		    	$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
