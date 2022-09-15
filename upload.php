@@ -14,7 +14,7 @@
 
 		file_put_contents($imageName, $data);
 
-		$imageName = 'http://localhost/rstl_pm/'.$imageName;
+		$imageName = 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/'.$imageName;
 
 		echo $imageName;
 	}
@@ -30,7 +30,7 @@
 
 		file_put_contents($imageName, $data);
 
-		$imageName = 'http://localhost/rstl_pm/'.$imageName;
+		$imageName = 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/'.$imageName;
 
 		echo $imageName;
 	}
@@ -46,7 +46,7 @@
 
 		file_put_contents($imageName, $data);
 
-		$imageName = 'http://localhost/rstl_pm/'.$imageName;
+		$imageName = 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/'.$imageName;
 
 		echo $imageName;
 	}
@@ -62,7 +62,7 @@
 
 		file_put_contents($imageName, $data);
 
-		$imageName = 'http://localhost/rstl_pm/'.$imageName;
+		$imageName = 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/'.$imageName;
 
 		echo $imageName;
 	}
@@ -72,7 +72,7 @@
     }
     else {
         move_uploaded_file($_FILES['file']['tmp_name'], 'images/' .time().date('Y-M-D').'-'.$_FILES['file']['name']);
-        $fileLink = 'http://localhost/rstl_pm/images/'.time().date('Y-M-D').'-'.$_FILES['file']['name'];
+        $fileLink = 'http://'.$_SERVER['HTTP_HOST'].'/rstl_pm/images/'.time().date('Y-M-D').'-'.$_FILES['file']['name'];
         echo $fileLink;
     }
  ?>
