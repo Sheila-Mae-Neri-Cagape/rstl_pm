@@ -494,6 +494,7 @@
 
 	$( ".modal-btn-add" ).click(function() {
 		event.preventDefault();
+		console.log(window.location.host);
  		var id = $("input[name=eacid]").val();
  		var fileDesc = $("input[name=attachDesc]").val();
 		var file_data = $('#newAttach').prop('files')[0];   
