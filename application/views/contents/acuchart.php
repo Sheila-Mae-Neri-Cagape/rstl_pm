@@ -25,6 +25,7 @@
           <td><span class=" btn btn-default  badge"  style="background-color: #1e7145; color:#1e7145;">.</span></td>
           <td><?php echo "Working: "?></td>
           <td> <?php echo $activeAC[0]->freq; ?></td>
+          <td> <?php if(isset($activeAC[1])){echo number_format(100*($activeAC[0]->freq/($activeAC[1]->freq+$activeAC[0]->freq)),2)."%";}else{echo "100%";} ?></td>
         </tr>
         <?php 
       }
@@ -35,6 +36,7 @@
           <td><span class=" btn btn-default  badge"  style="background-color: #b91d47; color:#b91d47;">.</span></td>
           <td><?php echo "Non-working: "?></td>
           <td> <?php echo $activeAC[1]->freq; ?></td>
+          <td> <?php echo number_format(100*($activeAC[1]->freq/($activeAC[1]->freq+$activeAC[0]->freq)),2)."%"; ?></td>
         </tr>
         <?php 
       } else {
@@ -43,6 +45,7 @@
           <td><span class=" btn btn-default  badge"  style="background-color: #b91d47; color:#b91d47;">.</span></td>
           <td><?php echo "Non-working: "; ?></td>
           <td> <?php echo "0"; ?></td>
+          <td> <?php echo "0%"; ?></td>
         </tr>
         <?php  
       }
