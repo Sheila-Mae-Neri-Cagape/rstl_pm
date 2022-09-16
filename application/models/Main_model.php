@@ -270,10 +270,10 @@ JOIN tbl_est_category ON tbl_est_category.`category_id` = tbl_equipment_type.`ca
 	}
 
 	public function getFeeds($user_id=null){
-		$qry = "SELECT CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 3 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 3 MONTH))) AS sched1, 
-	CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 6 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 6 MONTH))) AS sched2, 
-	CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 9 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 9 MONTH))) AS sched3, 
-	CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 12 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 12 MONTH))) AS sched4, 
+		$qry = "SELECT CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL -3 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL -3 MONTH))) AS sched1, 
+	CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 3 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 3 MONTH))) AS sched2, 
+	CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 6 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 6 MONTH))) AS sched3, 
+	CONCAT(LEFT(DATE_FORMAT((DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 9 MONTH)), '%M'), 3),' ',YEAR(DATE_ADD(tbl_ac_maint_record.`date_added`, INTERVAL 9 MONTH))) AS sched4, 
 	CONCAT(LEFT(DATE_FORMAT((tbl_ac_maint_record.`date_added`), '%M'), 3),' ',YEAR(tbl_ac_maint_record.`date_added`)) AS lastsched,
 	tbl_aircon.`id` as acid,
 	tbl_aircon.*, tbl_ac_maint_record.*

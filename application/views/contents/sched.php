@@ -72,7 +72,7 @@ a:hover {
         <td><?php echo $key->code_no; ?></td>
         <td class="text-center">
         <?php if ($key->sched1 == "Jan ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>'; } 
+          echo '<div class="record" id="'.$key->acid.'">X</div>'; } 
           elseif ($key->sched2 == "Jan ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Jan ".$year) {
@@ -85,7 +85,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Feb ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Feb ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Feb ".$year) {
@@ -98,7 +98,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Mar ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Mar ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Mar ".$year) {
@@ -111,7 +111,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Apr ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Apr ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Apr ".$year) {
@@ -124,7 +124,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "May ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "May ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "May ".$year) {
@@ -137,7 +137,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Jun ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Jun ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Jun ".$year) {
@@ -150,7 +150,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Jul ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Jul ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Jul ".$year) {
@@ -163,7 +163,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Aug ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Aug ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Aug ".$year) {
@@ -176,7 +176,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Sep ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Sep ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Sep ".$year) {
@@ -189,7 +189,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Oct ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Oct ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Oct ".$year) {
@@ -202,7 +202,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Nov ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Nov ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Nov ".$year) {
@@ -215,7 +215,7 @@ a:hover {
           echo "";
         } ?> </td>
         <td class="text-center"><?php if ($key->sched1 == "Dec ".$year) {
-          echo '<div class="record" id="'.$key->acid.'">/</div>';
+          echo '<div class="record" id="'.$key->acid.'">X</div>';
         } elseif ($key->sched2 == "Dec ".$year) {
           echo '<div class="record" id="'.$key->acid.'">/</div>';
         } elseif ($key->sched3 == "Dec ".$year) {
