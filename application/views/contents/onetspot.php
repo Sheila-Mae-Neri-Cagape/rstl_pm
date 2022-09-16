@@ -494,6 +494,7 @@
 
 	$( ".modal-btn-add" ).click(function() {
 		event.preventDefault();
+		console.log(window.location.host);
  		var id = $("input[name=eacid]").val();
  		var fileDesc = $("input[name=attachDesc]").val();
 		var file_data = $('#newAttach').prop('files')[0];   
@@ -503,11 +504,9 @@
 	    $( ".modal-btn-close" ).click();
 	    console.log(form_data);                             
 	    $.ajax({
-<<<<<<< HEAD
-	        url: 'http://'+window.location.hostname+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
-=======
+
 	        url: 'http://'+window.location.host+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
->>>>>>> b0e49ffdd3d6dc03750957b35b9a64aa04e5ff6a
+
 	        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
 	        cache: false,
 	        contentType: false,
@@ -554,11 +553,8 @@
 		// alert(data);
 		$.ajax({
 		    type: 'GET',
-<<<<<<< HEAD
-		    url: 'http://'+window.location.hostname+'/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
-=======
+
 		    url: 'http://'+window.location.host+'/rstl_pm/tspot/addACAttach?link='+data+'&id='+id+'&desc='+imgDe,
->>>>>>> b0e49ffdd3d6dc03750957b35b9a64aa04e5ff6a
 		    success: function(data) {
 		    	// alert(data);
 		    	$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});

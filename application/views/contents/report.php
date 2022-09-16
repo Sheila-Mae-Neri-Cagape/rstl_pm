@@ -85,5 +85,5 @@ $content = ob_get_contents();
 ob_end_clean();
 $obj_pdf->writeHTML($content, true, false, true, false, '');
 $fileName = $docTitle.'.pdf';
-$obj_pdf->Output($fileName, 'FI');
+$obj_pdf->Output($fileName, 'I');
 exit;

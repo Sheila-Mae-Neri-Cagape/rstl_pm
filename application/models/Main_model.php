@@ -280,7 +280,7 @@ JOIN tbl_est_category ON tbl_est_category.`category_id` = tbl_equipment_type.`ca
   FROM tbl_aircon 
   LEFT JOIN tbl_ac_maint_record
   ON tbl_aircon.`id`=tbl_ac_maint_record.`ac_id`
-  WHERE  tbl_ac_maint_record.`id` IN ( SELECT MAX(id)  
+  WHERE tbl_aircon.`ac_stat`=1 and tbl_ac_maint_record.`id` IN ( SELECT MAX(id)  
                          FROM tbl_ac_maint_record WHERE tbl_ac_maint_record.`status`=1
                          GROUP BY ac_id)";
 		
