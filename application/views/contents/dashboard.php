@@ -56,12 +56,13 @@
 			  <a id="oprof" class="list-group-item" style="cursor: pointer;">ACU Maintenance Schedule</a>
 			  <a id="acuchart" class="list-group-item" style="cursor: pointer;">ACU Chart</a>
 			 
-<<<<<<< HEAD
+
 			  <a id="mforms" class="list-group-item"  style="cursor: pointer;">Maintenance Forms</a>
-=======
-			  <a id="mforms" class="list-group-item" style="cursor: pointer;">Maintenance Forms</a>
->>>>>>> 3980e98406f30a88d53c7569698624ac3955cbb4
+
+
+
 			  <!--
+			  				  <a id="mforms" class="list-group-item" style="cursor: pointer;">Maintenance Forms</a>
 			  <a id="routes" class="list-group-item">Routes</a>
 
 			-->
