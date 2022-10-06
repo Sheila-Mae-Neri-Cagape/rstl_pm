@@ -208,7 +208,7 @@ class Main extends CI_Controller {
 		// echo "string";
 		if($this->checkLoggedIn()){
 			$data['vehicle'] = $this->Main_model->getVehicle();
-			$this->load->view('contents/listvehicle',$data);
+			$this->load->view('contents/listVehicle',$data);
 		}
 		
 	} 	
@@ -217,7 +217,7 @@ class Main extends CI_Controller {
 		// echo "string";
 		if($this->checkLoggedIn()){
 			$data['building'] = $this->Main_model->getBuilding();
-			$this->load->view('contents/listbuilding',$data);
+			$this->load->view('contents/listBuilding',$data);
 		}
 		
 	} 	
