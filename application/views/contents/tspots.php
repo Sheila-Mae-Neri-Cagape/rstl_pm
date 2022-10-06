@@ -1,16 +1,22 @@
+ <style type="text/css">
+   .color:hover{
+    color:blue;
+   }
+ </style>
+
  <div class="row col-md-12 text-center " style="text-align:center">
   <div class="row col-md-12">
   <p id="demo"></p>
   <h3 class="text-center">DEPARTMENT OF SCIENCE AND TECHNOLOGY</h3>
   <h4 class="text-center">Regional Office No. X</h4>
   <hr>  
-  <h2 class="text-center">List of Air Conditioning Units <button type="button" class="btn btn-warning " data-toggle="modal" data-target="#myACModal" >Add New
+  <h2 class="text-center">List of Air Conditioning Units <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myACModal" >Add New
         </button></h2> 
   </div>
  </div>
   
 <table class="table table-striped table-bordered table-hover" id="esttable">
-	<thead>
+	<thead style="background-color: lightblue">
 		<tr>
 			<th>Code No.</th>
 			<th>Equipment Name</th>
@@ -30,16 +36,18 @@
 			<td><?php echo $key->current_location; ?></td>
 			
 			<td>
-				<!-- Single button -->
+        <span class="glyphicon glyphicon-eye-open viewAC color" aria-hidden="true" id="<?php echo($key->id); ?>" style="cursor: pointer; "></span> &nbsp;
+        <span class="glyphicon glyphicon-trash deleteAC color" aria-hidden="true" id="<?php echo($key->id); ?>" style="cursor: pointer; "></span>
+				<!-- Single button 
 				<div class="btn-group">
 				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 				    Action <span class="caret"></span>
 				  </button>
-				  <ul class="dropdown-menu" role="menu" id="<?php echo($key->id); ?>" >
+				  <ul class="dropdown-menu" role="menu" id="<?php ($key->id); ?>" >
 				    <li><a class="viewAC">View</a></li>
 				    <li><a  class="deleteAC">Delete</a></li>
 				  </ul>
-				</div>
+				</div>-->
 <div class="modal fade <?php echo $key->id.'acdelmodal'; ?>" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="<?php echo $key->id.'t-modal'; ?> ">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
@@ -224,7 +232,7 @@
 
 
     	  $('.viewAC').click(function(){
-    	  	var id = $(this).parents('ul:first').attr('id');
+    	  	var id = $(this).attr('id');
         	console.log(id);
         	 $("#reloadDiv").load('http://'+window.location.host+'/rstl_pm/tspot/getOneTspot',{id:id});
 		        // // alerttt($(this).attr("class"));
@@ -234,7 +242,7 @@
 
     	    // delete act 
         $(".deleteAC").on("click", function(){
-         	 var id = $(this).parents('ul:first').attr('id');
+         	 var id = $(this).attr('id');
       	   //console.log("try");
            //console.log(id);
           $('.'+id+'acdelmodal').modal('show');

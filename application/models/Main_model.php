@@ -138,16 +138,6 @@ WHERE tbl_equipment.`id` = '".$id."' AND tbl_equipment.`status`=1 AND tbl_maint_
 	}
 
 
-	public function getLogo($id) {
-		$qry = "SELECT * FROM tbl_est_pictures WHERE id = '$id' AND STATUS = 1 AND tbl_est_pictures.`photo_type` = 'logo'";
-		return $this->db->query($qry)->result();
-	}
-
-	public function getPic($id) {
-		$qry = "SELECT * FROM tbl_est_pictures WHERE id = '$id' AND STATUS = 1 AND tbl_est_pictures.photo_type IS NULL";
-		return $this->db->query($qry)->result();
-	}
-
 
 	public function getType($id) {
 		$qry = "
@@ -164,81 +154,6 @@ JOIN tbl_est_category ON tbl_est_category.`category_id` = tbl_equipment_type.`ca
 		return $this->db->query($qry)->result();	
 	}
 
-	public function addFeatPics($link,$id,$desc){
-		$qry = "INSERT INTO tbl_photo (id,photo_path,status) VALUES ('".$id."','".$link."',1)";
-		return $this->db->query($qry);
-	}
-
-	public function addLogoPic($link,$id){
-		$qry = "UPDATE tbl_photo SET photo_path = '".$link."' WHERE id = '".$id."' and photo_type = 'logo'";
-		return $this->db->query($qry);
-	}
-	
-
-	public function deleteImage($z, $array){
-		$qry = "UPDATE tbl_est_pictures SET status = '".$z."' WHERE photo_id = '".$array."'";
-		return $this->db->query($qry);
-	}
-
-	public function addnewAccom($array){
-		$qry = "INSERT INTO tbl_farm_accommodation (accommodation_name,est_desc,fee,id, status) VALUES ('".$array[0]."','".$array[1]."','".$array[2]."','".$array[3]."', 1)";
-		return $this->db->query($qry);
-	}
-
-	public function updateAccommodation($array){
-		$qry = "UPDATE tbl_farm_accommodation SET accommodation_name='".$array[0]."', description='".$array[1]."', fee = '".$array[2]."' WHERE accommodation_id = '".$array[3]."'";
-		return $this->db->query($qry);
-	}
-
-	public function deleteAccom($z, $array){
-		$qry = "UPDATE tbl_est_accommodation SET status = '".$z."' WHERE accommodation_id = '".$array."'";
-		return $this->db->query($qry);
-	}
-
-	public function addnewActivity($array){
-		$qry = "INSERT INTO tbl_farm_activities (id,name,est_desc,fee, status) VALUES ('".$array[3]."', '".$array[0]."','".$array[1]."','".$array[2]."',1)";
-		return $this->db->query($qry);
-	}
-
-	public function updateActivity($array){
-		$qry = "UPDATE tbl_farm_activities SET name='".$array[0]."', description='".$array[1]."', fee = '".$array[2]."' WHERE farm_act_id = '".$array[3]."'";
-		return $this->db->query($qry);
-	}
-
-	public function deleteActivity($z, $array){
-		$qry = "UPDATE tbl_est_activities SET status = '".$z."' WHERE farm_act_id = '".$array."'";
-		return $this->db->query($qry);
-	}
-
-
-	public function getdelFarm(){
-		$qry = "SELECT * FROM tbl_equipment WHERE status = 0";
-		return $this->db->query($qry)->result();
-	}
-	public function getdelFarmPic(){
-		$qry = "SELECT * FROM tbl_est_pictures LEFT JOIN tbl_equipment ON tbl_est_pictures.`id` = tbl_equipment.`id`  WHERE tbl_est_pictures.`status` = 0";
-		return $this->db->query($qry)->result();
-	}
-	public function getdelFarmAct(){
-		$qry = "SELECT * FROM tbl_est_activities LEFT JOIN tbl_equipment ON tbl_est_activities.`id` = tbl_equipment.`id`  WHERE tbl_est_activities.`status` = 0";
-		return $this->db->query($qry)->result();
-	}
-	public function getdelFarmAccom(){
-		$qry = "SELECT * FROM tbl_est_accommodation LEFT JOIN tbl_equipment ON tbl_est_accommodation.`id` = tbl_equipment.`id`  WHERE tbl_est_accommodation.`status` = 0";
-		return $this->db->query($qry)->result();
-	}
-	public function getdelSt(){
-		$qry = "SELECT * FROM tbl_sidetrips WHERE status = 0";
-		return $this->db->query($qry)->result();
-	}
-	public function getdelStAct(){
-		$qry = "SELECT * FROM tbl_sidetrips_activities LEFT JOIN tbl_sidetrips ON tbl_sidetrips_activities.`sidetrips_id` = tbl_sidetrips.`sidetrip_id`  WHERE tbl_sidetrips_activities.`status` = 0";
-		return $this->db->query($qry)->result();
-	}
-	public function getdelStPic(){
-		$qry = "SELECT * FROM tbl_sidetrips_pictures LEFT JOIN tbl_sidetrips ON tbl_sidetrips_pictures.`sidetrips_id` = tbl_sidetrips.`sidetrip_id`  WHERE tbl_sidetrips_pictures.`status` = 0";
-		return $this->db->query($qry)->result();
-	}
 
 	public function restore($id,$type){
 		if($type == 1){
@@ -292,97 +207,20 @@ JOIN tbl_est_category ON tbl_est_category.`category_id` = tbl_equipment_type.`ca
 		return $this->db->query($qry)->result();
 	}
 
-	public function getSoloFarmStars($id){
-		$qry = "CALL proc_getsolofarmrate($id)";
-		return $this->db->query($qry)->result();
-	}
-
-	public function getAVGFarmStars($id){
-		$qry = " CALL proc_getfarmavgrate($id)";
-		return $this->db->query($qry)->result();
-	}
-
-	public function getAllItinerary($fid = null){
-		if($fid ==null){
-				$qry = "SELECT itinerary_id FROM tbl_itinerary";
-		} else {
-				$qry = "SELECT itinerary_id FROM tbl_itinerary WHERE user_id = $fid";
-		}
-
-		return $this->db->query($qry)->result();
-	}
-
-	public function getMainEstUsingItiID($itinerary_id) {
-		$qry = "SELECT tbl_itinerary.`itinerary_name`, tbl_itinerary.`date_created`,tbl_equipment.`id`, tbl_equipment.`est_name`, tbl_itinerary.`itinerary_id`,tbl_users.`firstname`,tbl_users.`lastname`
-			 FROM tbl_itinerary JOIN tbl_itinerary_est ON tbl_itinerary.`itinerary_id` = tbl_itinerary_est.`itinerary_id`
-			 JOIN tbl_equipment ON tbl_itinerary_est.`id` = tbl_equipment.`id`
-			JOIN tbl_users ON tbl_itinerary.`user_id` = tbl_users.`user_id`
-			WHERE tbl_itinerary.`itinerary_id` = '".$itinerary_id."'			 ORDER BY tbl_equipment.`id`,tbl_itinerary.`date_created`"; 
-
-		return $this->db->query($qry)->result();
-	}
-
-	public function getItinerary($fid = null){
-		if($fid == null){
-			$qry = "SELECT tbl_itinerary.`date_created`,tbl_equipment.`id`, tbl_equipment.`est_name`,tbl_itinerary.`itinerary_id`,tbl_users.`firstname`,
-tbl_users.`lastname`
- FROM tbl_itinerary JOIN tbl_equipment
-ON tbl_itinerary.`id` = tbl_equipment.`id`
-JOIN tbl_users ON tbl_itinerary.`user_id` = tbl_users.`user_id` ORDER BY tbl_equipment.`id`,tbl_itinerary.`date_created`";
-} else {
-	$qry = "SELECT tbl_itinerary.`date_created`,tbl_equipment.`id`, tbl_equipment.`est_name`,tbl_itinerary.`itinerary_id`,tbl_users.`firstname`,
-tbl_users.`lastname`
- FROM tbl_itinerary JOIN tbl_equipment
-ON tbl_itinerary.`id` = tbl_equipment.`id`
-JOIN tbl_users ON tbl_itinerary.`user_id` = tbl_users.`user_id` WHERE tbl_equipment.`est_owner_id` = $fid";
-}
-		
-		return $this->db->query($qry)->result();
-	}
-
-	public function getAllEST($iid){
-		$qry = "SELECT tbl_itinerary_est.`id` FROM tbl_itinerary_est JOIN tbl_itinerary ON tbl_itinerary.`itinerary_id` = tbl_itinerary_est.`itinerary_id` WHERE tbl_itinerary.`itinerary_id` = $iid";
-
-		return $this->db->query($qry)->result();
-	}
-
-	public function getOneItinerary($iid){
-		$qry = "SELECT tbl_itinerary.`date_created`,tbl_itinerary.`itinerary_name`, tbl_itinerary.`itinerary_id`,tbl_users.`firstname`,tbl_users.`lastname` FROM tbl_itinerary JOIN tbl_users ON tbl_itinerary.`user_id` = tbl_users.`user_id` WHERE tbl_itinerary.`itinerary_id` = $iid";
-		return $this->db->query($qry)->result();
-	}   
-
-	public function getItineraryEst($eid,$iid) {
-		$qry = "SELECT * FROM tbl_itinerary_est 
-JOIN tbl_itinerary ON tbl_itinerary_est.`itinerary_id` = tbl_itinerary.`itinerary_id`
-JOIN tbl_equipment ON tbl_itinerary_est.`id` = tbl_equipment.`id`
-WHERE tbl_equipment.`id` = '$eid' AND tbl_itinerary.`itinerary_id` = '$iid'";
-
-		return $this->db->query($qry)->result(); 
-	}
-
-	public function getItineraryAccom($eid,$iid){
-		$qry = "SELECT * FROM tbl_itinerary_accommodation 
-JOIN tbl_itinerary ON tbl_itinerary_accommodation.`itinerary_id` = tbl_itinerary.`itinerary_id` 
-JOIN tbl_est_accommodation ON tbl_itinerary_accommodation.`accommodation_id` = tbl_est_accommodation.`accommodation_id` 
-WHERE tbl_itinerary.`itinerary_id` = '$iid' AND tbl_est_accommodation.`id`= '$eid'";
-		return $this->db->query($qry)->result();
-	}
-	
-	public function getItineraryAct($eid,$iid){
-		$qry = "SELECT * FROM tbl_itinerary_est_act 
-JOIN tbl_itinerary ON tbl_itinerary_est_act.`itinerary_id` = tbl_itinerary.`itinerary_id` 
-JOIN tbl_est_activities ON tbl_itinerary_est_act.`farm_act_id` = tbl_est_activities.`farm_act_id` 
-WHERE tbl_itinerary.`itinerary_id` = '$iid' AND tbl_est_activities.`id` = '$eid'";
-		return $this->db->query($qry)->result();
-	}
-
 	public function getActiveAC(){
 		$qry = "SELECT tbl_ac_status.`id`,tbl_ac_status.`equip_stat`, COUNT(tbl_aircon.`ac_stat`) as freq FROM tbl_ac_status LEFT JOIN tbl_aircon ON  tbl_ac_status.`id` = tbl_aircon.`ac_stat` WHERE tbl_aircon.`status` =1 GROUP BY tbl_ac_status.`id` ";
 		return $this->db->query($qry)->result();
 	}
 	
-	// public function getItinerarySt($iid){
-	// 	$qry = "SELECT * FROM tbl_itinerary_sidetrips_act JOIN tbl_itinerary ON tbl_itinerary_sidetrips_act.`itinerary_id` = tbl_itinerary.`itinerary_id`  JOIN tbl_sidetrips ON tbl_itinerary_sidetrips_act.`sidetrip_id` = tbl_sidetrips.`sidetrip_id` WHERE tbl_itinerary.`itinerary_id` =$iid";
-	// 	return $this->db->query($qry)->result();
-	// }
+	public function getVehicle(){
+		$qry = "SELECT * FROM tbl_vehicle where status = 1";
+
+		return $this->db->query($qry)->result();
+	}
+
+	public function getBuilding(){
+		$qry = "SELECT * FROM tbl_building where status = 1";
+
+		return $this->db->query($qry)->result();
+	}	
 }

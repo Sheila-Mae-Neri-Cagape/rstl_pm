@@ -46,7 +46,7 @@ a:hover {
   <a href="#" class="round">/</a> Scheduled Maintenance
 <br><br>
   <table class="table table-striped table-bordered table-hover table-condensed">
-    <thead>
+    <thead style="background-color: lightblue">
       <tr>
         <th>AC Code</th>
         <th>Jan <?php echo $year; ?></th>

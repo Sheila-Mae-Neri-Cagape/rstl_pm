@@ -455,7 +455,7 @@
 			?>	
 				<div class="col-md-12">
 					<ul class="list-group">
-						<li class="list-group-item"><a href="<?php echo $pic->file_path; ?>" target="_blank"><?php echo $pic->file_description; ?></a><a href="#" data-dismiss="alert" class="close deleteFile">&times;</a>	</li>
+						<li class="list-group-item"><a href="<?php echo $pic->file_path; ?>" target="_blank"><?php echo $pic->file_description; ?></a><a id="<?php echo $pic->ac_attach_id; ?>" href="#" data-dismiss="alert" class="close deleteFile">&times;</a>	</li>
 					</ul>
 					
 				</div>
@@ -928,6 +928,55 @@
     $('.'+splitString+'MRmodal').modal('hide');
   }); //delete act
 
+  $(".deleteFile").on("click", function(){
+     attach_id = $(this).attr("id");
+     //alert(attach_id);
+     var ac_id = $("input[name=eacid]").val();
+     var delact = new Array(attach_id,ac_id);
+
+     $.ajax({
+		url: "http://"+window.location.host+"/rstl_pm/tspot/deleteAttach",
+		type: "POST",
+		data: {"data":delact},
+		success: function(data){
+			// alert(data[0]+" "+data[1]);
+			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:data});
+			$('#reloadDiv').each(function(){
+				    $(this).resize();
+				});				   
+
+			var fade_in = function() {
+				  // $(".alert").fadeOut().empty();
+				  $('.alert').text( "Successfully removed attachment." );
+				  $(".alert").show();
+				  $('.modal-backdrop').remove();
+				}
+
+				var fade_out = function() {
+				  $(".alert").fadeOut().empty();
+				  // $(".alert").show();
+				}
+				setTimeout(fade_in,500);
+				setTimeout(fade_out, 3000);
+		},
+			error: function(){
+				
+				var fade_in = function() {
+				  // $(".alert").fadeOut().empty();
+				  $('.alert').text( "Unable to move to trash." );
+				  $(".alert").show();
+				}
+
+				var fade_out = function() {
+				  $(".alert").fadeOut().empty();
+				  // $(".alert").show();
+				}
+				setTimeout(fade_in,500);
+				setTimeout(fade_out, 3000);
+			}
+	});
+  });
+  
 
   $("#acuStat").on("click", function(){
       var id = $("input[name=eacid]").val();

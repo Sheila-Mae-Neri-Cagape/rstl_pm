@@ -13,11 +13,11 @@ class Login extends CI_Controller {
 		if($msg!=null){
 			$data['content'] = 'contents/login';
 			$data['msg'] = $msg;
-			$data['bg'] = base_url('assets/img/bg.jpg');
+			$data['bg'] = base_url('assets/img/bg.jpeg');
 			$this->load->view('portal',$data);
 		} else {
 			$data['content'] = 'contents/login';
-			$data['bg'] = base_url('assets/img/bg.jpg');
+			$data['bg'] = base_url('assets/img/bg.jpeg');
 			$this->load->view('portal',$data);
 		}
 	}

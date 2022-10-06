@@ -133,6 +133,14 @@ class Tspot extends CI_Controller {
 		}
 	}
 
+	public function deleteAttach(){
+		if($this->checkLoggedIn() && ($_SESSION['access']==0)){
+			$array =$_POST['data'];
+			$this->Tspot_model->deleteACAttach(0,$array);
+			echo $array[1];
+		}
+	}
+
 	public function getActiveAC(){
 		if($this->checkLoggedIn() && ($_SESSION['access']==0)){
 			$activeAC = $this->Tspot_model->getActiveAC();

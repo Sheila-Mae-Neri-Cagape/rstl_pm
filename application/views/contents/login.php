@@ -1,8 +1,8 @@
 
 <br><br><br>
-<div style="background-color: #8FBC8F; padding: 20px; border-radius: 10px; box-shadow: 5px 10px #2F4F4F;" class=" col-md-offset-3 col-md-6">
+<div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 5px 10px skyblue;" class=" col-md-offset-3 col-md-6">
 	<div class="row text-center">
-		<img style="height: 200px;width: 200px;" src="<?= base_url('assets/img/final logo.jpg')?>">
+		<img style="height: 200px;width: 200px;" src="<?= base_url('assets/img/dot.png')?>">
 	</div>
 	<br>
 	<div class="row">

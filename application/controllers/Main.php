@@ -171,21 +171,7 @@ class Main extends CI_Controller {
 			$this->db->reconnect();
 			$data['maintprog'] = $this->Main_model->getMaintProg($id);
 			$this->db->reconnect();
-			//$data['logo'] = $this->Main_model->getLogo($id);
-			//$this->db->reconnect();
-			//$data['pic'] = $this->Main_model->getPic($id);
-			//$this->db->reconnect();
-			//$data['type'] = $this->Main_model->getType($id);
-			//$this->db->reconnect();
-			//$data['address'] = $this->Main_model->getAddress($data['farmdetails'][0]->address_id);
-			//$this->db->reconnect();
-			//$data['userdetails'] = $this->Main_model->getFarmOwners($data['farmdetails'][0]->owner);
-			//$this->db->reconnect();
-			// $data['farmtypes'] = $this->Main_model->getFarmTypes($data['farmdetails'][0]->id);
-			// $this->db->reconnect();
-			// $data['alltypes'] = $this->Main_model->getAllFarmTypes();
-
-
+		
 			$this->load->view('contents/onefarm',$data);
 		}
 		
@@ -218,7 +204,23 @@ class Main extends CI_Controller {
 		
 	} 
 
-	
+	public function getVehicle(){
+		// echo "string";
+		if($this->checkLoggedIn()){
+			$data['vehicle'] = $this->Main_model->getVehicle();
+			$this->load->view('contents/listvehicle',$data);
+		}
+		
+	} 	
+
+	public function getBuilding(){
+		// echo "string";
+		if($this->checkLoggedIn()){
+			$data['building'] = $this->Main_model->getBuilding();
+			$this->load->view('contents/listbuilding',$data);
+		}
+		
+	} 	
 
 	public function getFeeds(){
 		// echo "string";

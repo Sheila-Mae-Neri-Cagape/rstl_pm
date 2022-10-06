@@ -1,9 +1,9 @@
 
-	<nav style="" class="navbar  navbar-inverse navbar-fixed-top"  role="navigation">
+	<nav style="background-color: darkblue" class="navbar   navbar-fixed-top"  role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <a style="pointer-events: none; cursor: default;font-weight: bold" class="navbar-brand">DOST Preventive Maintenance</a>
+		      <a style="pointer-events: none; cursor: default;font-weight: bold;color: white; " class="navbar-brand">DOST Preventive Maintenance</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -13,8 +13,8 @@
 			    
 				
 				<ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user[0]->username; ?><span class="caret"></span></a>
+			        <li class="dropdown" >
+			          <a style="color: white" href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user[0]->username; ?><span class="caret"></span></a>
 			          <ul class="dropdown-menu" role="menu">
 			            <!-- <li><a href="#">Action</a></li>
 			            <li><a href="#">Another action</a></li>
@@ -49,32 +49,37 @@
 			  <!-- <a id="routes" class="list-group-item">Routes</a> -->
 			</div>
 			<div class="list-group" style="">
-				<label>Manage</label>
+				<label>Manage ACU</label>
 			  <!--<a id="farms" class="list-group-item active">Equipment</a> -->
 			  
 			  <a id="tspots" class="list-group-item active" style="cursor: pointer;">ACU List</a>
 			  <a id="oprof" class="list-group-item" style="cursor: pointer;">ACU Maintenance Schedule</a>
 			  <a id="acuchart" class="list-group-item" style="cursor: pointer;">ACU Chart</a>
-			 
+			 <a id="mforms" class="list-group-item"  style="cursor: pointer;">Maintenance Forms</a>
 
-			  <a id="mforms" class="list-group-item"  style="cursor: pointer;">Maintenance Forms</a>
-
-
-
-			  <!--
-			  				  <a id="mforms" class="list-group-item" style="cursor: pointer;">Maintenance Forms</a>
-			  <a id="routes" class="list-group-item">Routes</a>
-
-			-->
 			</div>
 
-			<!---<div class="list-group">
-				<label>Tools</label>
-			  <a id="feeds" class="list-group-item">Ratings/Feedbacks</a>
-			  <a id="stats" class="list-group-item">View Itinerary</a>
-			  <a id="trash" class="list-group-item">View Trash</a>
+			<div class="list-group" style="">
+				<label>Manage Vehicle</label>
+			  <!--<a id="farms" class="list-group-item active">Equipment</a> -->
+			  
+			  <a id="listvehicle" class="list-group-item" style="cursor: pointer;">Vehicle List</a>
+			  <!--
+			  <a id="schedvehicle" class="list-group-item" style="cursor: pointer;">Vehicle Maintenance Schedule</a>
+			  <a id="chartvehicle" class="list-group-item" style="cursor: pointer;">Vehicle Chart</a>
+				-->
+			</div>
 
-			</div> -->
+			<div class="list-group" style="">
+				<label>Manage Building</label>
+			  <!--<a id="farms" class="list-group-item active">Equipment</a> -->
+			  
+			  <a id="listbldg" class="list-group-item" style="cursor: pointer;">Building List</a>
+			  <!--
+			  <a id="schedbldg" class="list-group-item" style="cursor: pointer;">Building Maintenance Schedule</a>
+			  <a id="chartbldg" class="list-group-item" style="cursor: pointer;">Building Chart</a>
+				-->
+			</div>
 		</div>
 		
 	</div>
