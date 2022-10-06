@@ -32,7 +32,7 @@ class Vehicle extends CI_Controller {
 			$data['vehmr'] = $this->Vehicle_model->getVehMR($id);
 			$this->db->reconnect();
 			$data['attach'] = $this->Vehicle_model->getVehAttachments($id);
-			$this->load->view('contents/oneVehicle',$data);
+			$this->load->view('contents/onevehicle',$data);
 		}
 	}
 
