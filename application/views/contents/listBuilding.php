@@ -15,7 +15,7 @@
   </div>
  </div>
   
-<table class="table table-striped table-bordered table-hover" id="esttable">
+<table class="table table-striped table-bordered table-hover" id="bdlgtable">
   <thead style="background-color: lightblue">
     <tr>
       <th>Code No.</th>
@@ -150,6 +150,32 @@
 
 
     <script type="text/javascript">
+
+      $(document).ready(function(){
+          $('#bdlgtable').DataTable({
+              initComplete: function () {
+                  this.api().columns().every( function () {
+                      var column = this;
+                      var select = $('<select><option value=""></option></select>')
+                          .appendTo( $(column.footer()).empty() )
+                          .on( 'change', function () {
+                              var val = $.fn.dataTable.util.escapeRegex(
+                                  $(this).val()
+                              );
+       
+                              column
+                                  .search( val ? '^'+val+'$' : '', true, false )
+                                  .draw();
+                          } );
+       
+                      column.data().unique().sort().each( function ( d, j ) {
+                          select.append( '<option value="'+d+'">'+d+'</option>' )
+                      } );
+                  } );
+              }
+          });
+      });
+
       $('#createbldg').on('click',function(){
         $("#myBldgModal").modal('hide');
         var code = $("input[name=bldgcode]").val();
