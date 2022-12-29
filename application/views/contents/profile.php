@@ -62,7 +62,7 @@
         $('.viewTspot').click(function(){
           var id = $(this).parents('ul:first').attr('id');
           console.log(id);
-           $("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/tspot/getOneTspot",{id:id});
+           $("#reloadDiv").load("http://"+window.location.host+"/shl/tspot/getOneTspot",{id:id});
             // // alert($(this).attr("class"));
             // alert('j');
         });
@@ -90,12 +90,12 @@
     $('.'+splitString+'mmodal').modal('hide');
     // alert(splitString);
     $.ajax({
-    url: "http://"+window.location.host+"/rstl_pm/tspot/deleteSidetrip",
+    url: "http://"+window.location.host+"/shl/tspot/deleteSidetrip",
     type: "POST",
     data: {"data":splitString},
     success: function(data){
       // alert(data);
-      $("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/main/getTspots");
+      $("#reloadDiv").load("http://"+window.location.host+"/shl/main/getTspots");
     }
   });
   });

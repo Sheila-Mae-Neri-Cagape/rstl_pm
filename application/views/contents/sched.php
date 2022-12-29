@@ -241,7 +241,7 @@ a:hover {
         var id = $(this).attr('id');
           //console.log(id);
           //console.log(window.location.hostname);
-           $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/tspot/getOneTspot",{id:id});
+           $("#reloadDiv").load("http://"+window.location.hostname+"/shl/tspot/getOneTspot",{id:id});
           // alert(id);
         });
     </script>

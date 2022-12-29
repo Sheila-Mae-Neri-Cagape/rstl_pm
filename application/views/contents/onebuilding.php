@@ -509,12 +509,12 @@
     	//alert(st_info);
     	$.ajax({
 			// url: "http://"+window.location.host+"/dot/upload.php",
-			url: "http://"+window.location.host+"/rstl_pm/building/updateBuilding",
+			url: "http://"+window.location.host+"/shl/building/updateBuilding",
 			type: "POST",
 			data: {"data":st_info},
 			success: function(data){
 				//alert(data);
-				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/building/getOneBuilding",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/shl/building/getOneBuilding",{id:data});
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully updated Building details." );
@@ -570,12 +570,12 @@
 
     	var bldgmrdetails = new Array(op,date,remarks,pb,id);
     	$.ajax({
-			url: "http://"+window.location.host+"/rstl_pm/building/addBldgMR",
+			url: "http://"+window.location.host+"/shl/building/addBldgMR",
 			type: "POST",
 			data: {"data":bldgmrdetails},
 			success: function(data){
 				// alert(data);
-				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/building/getOneBuilding",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/shl/building/getOneBuilding",{id:data});
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully added maintenance record." );
@@ -631,11 +631,11 @@
     	//alert(mrdetails);
 
 		$.ajax({
-			url: "http://"+window.location.host+"/rstl_pm/building/updateBldgMR",
+			url: "http://"+window.location.host+"/shl/building/updateBldgMR",
 			type: "POST",
 			data: {"data":mrdetails},
 			success: function(data){
-				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/building/getOneBuilding",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/shl/building/getOneBuilding",{id:data});
 				
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
@@ -689,12 +689,12 @@
 
 		// alert(delact);
     $.ajax({
-		url: "http://"+window.location.host+"/rstl_pm/building/deleteBldgMR",
+		url: "http://"+window.location.host+"/shl/building/deleteBldgMR",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/building/getOneBuilding",{id:data});
+			$("#reloadDiv").load("http://"+window.location.host+"/shl/building/getOneBuilding",{id:data});
 			$('#reloadDiv').each(function(){
 				    $(this).resize();
 				});				   
@@ -749,7 +749,7 @@
 	    console.log(form_data);                             
 	    $.ajax({
 
-	        url: 'http://'+window.location.host+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
+	        url: 'http://'+window.location.host+'/shl/upload.php', // <-- point to server-side PHP script 
 
 	        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
 	        cache: false,
@@ -798,10 +798,10 @@
 		$.ajax({
 		    type: 'GET',
 
-		    url: 'http://'+window.location.host+'/rstl_pm/building/addBldgAttach?link='+data+'&id='+id+'&desc='+imgDe,
+		    url: 'http://'+window.location.host+'/shl/building/addBldgAttach?link='+data+'&id='+id+'&desc='+imgDe,
 		    success: function(data) {
 		    	// alert(data);
-		    	$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/building/getOneBuilding",{id:data});
+		    	$("#reloadDiv").load("http://"+window.location.host+"/shl/building/getOneBuilding",{id:data});
 		    	
 		    	var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
@@ -848,12 +848,12 @@
      var delact = new Array(attach_id,ac_id);
 
      $.ajax({
-		url: "http://"+window.location.host+"/rstl_pm/building/deleteBldgAttach",
+		url: "http://"+window.location.host+"/shl/building/deleteBldgAttach",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/building/getOneBuilding",{id:data});
+			$("#reloadDiv").load("http://"+window.location.host+"/shl/building/getOneBuilding",{id:data});
 			$('#reloadDiv').each(function(){
 				    $(this).resize();
 				});				   

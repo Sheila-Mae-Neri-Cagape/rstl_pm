@@ -509,12 +509,12 @@
     	//alert(st_info);
     	$.ajax({
 			// url: "http://"+window.location.host+"/dot/upload.php",
-			url: "http://"+window.location.host+"/rstl_pm/vehicle/updateVehicle",
+			url: "http://"+window.location.host+"/shl/vehicle/updateVehicle",
 			type: "POST",
 			data: {"data":st_info},
 			success: function(data){
 				//alert(data);
-				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/vehicle/getOneVehicle",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/shl/vehicle/getOneVehicle",{id:data});
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully updated Vehicle details." );
@@ -570,12 +570,12 @@
 
     	var vehmrdetails = new Array(op,date,remarks,pb,id);
     	$.ajax({
-			url: "http://"+window.location.host+"/rstl_pm/vehicle/addVehMR",
+			url: "http://"+window.location.host+"/shl/vehicle/addVehMR",
 			type: "POST",
 			data: {"data":vehmrdetails},
 			success: function(data){
 				// alert(data);
-				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/vehicle/getOneVehicle",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/shl/vehicle/getOneVehicle",{id:data});
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
 				  $('.alert').text( "Successfully added maintenance record." );
@@ -632,11 +632,11 @@
     	//alert(mrdetails);
 
 		$.ajax({
-			url: "http://"+window.location.host+"/rstl_pm/vehicle/updateVehMR",
+			url: "http://"+window.location.host+"/shl/vehicle/updateVehMR",
 			type: "POST",
 			data: {"data":mrdetails},
 			success: function(data){
-				$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/vehicle/getOneVehicle",{id:data});
+				$("#reloadDiv").load("http://"+window.location.host+"/shl/vehicle/getOneVehicle",{id:data});
 				
 				var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
@@ -691,12 +691,12 @@
 
 		// alert(delact);
     $.ajax({
-		url: "http://"+window.location.host+"/rstl_pm/vehicle/deleteVehMR",
+		url: "http://"+window.location.host+"/shl/vehicle/deleteVehMR",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/vehicle/getOneVehicle",{id:data});
+			$("#reloadDiv").load("http://"+window.location.host+"/shl/vehicle/getOneVehicle",{id:data});
 			$('#reloadDiv').each(function(){
 				    $(this).resize();
 				});				   
@@ -751,7 +751,7 @@
 	    console.log(form_data);                             
 	    $.ajax({
 
-	        url: 'http://'+window.location.host+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
+	        url: 'http://'+window.location.host+'/shl/upload.php', // <-- point to server-side PHP script 
 
 	        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
 	        cache: false,
@@ -800,10 +800,10 @@
 		$.ajax({
 		    type: 'GET',
 
-		    url: 'http://'+window.location.host+'/rstl_pm/vehicle/addVehAttach?link='+data+'&id='+id+'&desc='+imgDe,
+		    url: 'http://'+window.location.host+'/shl/vehicle/addVehAttach?link='+data+'&id='+id+'&desc='+imgDe,
 		    success: function(data) {
 		    	// alert(data);
-		    	$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/vehicle/getOneVehicle",{id:data});
+		    	$("#reloadDiv").load("http://"+window.location.host+"/shl/vehicle/getOneVehicle",{id:data});
 		    	
 		    	var fade_in = function() {
 				  // $(".alert").fadeOut().empty();
@@ -850,12 +850,12 @@
      var delact = new Array(attach_id,ac_id);
 
      $.ajax({
-		url: "http://"+window.location.host+"/rstl_pm/vehicle/deleteVehAttach",
+		url: "http://"+window.location.host+"/shl/vehicle/deleteVehAttach",
 		type: "POST",
 		data: {"data":delact},
 		success: function(data){
 			// alert(data[0]+" "+data[1]);
-			$("#reloadDiv").load("http://"+window.location.host+"/rstl_pm/vehicle/getOneVehicle",{id:data});
+			$("#reloadDiv").load("http://"+window.location.host+"/shl/vehicle/getOneVehicle",{id:data});
 			$('#reloadDiv').each(function(){
 				    $(this).resize();
 				});				   
