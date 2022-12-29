@@ -100,7 +100,7 @@
       $( ".modal-btn-close" ).click();
       console.log(form_data);                             
       $.ajax({
-          url: 'http://'+window.location.hostname+'/shl/upload.php', // <-- point to server-side PHP script 
+          url: 'http://'+window.location.hostname+'/rstl_pm/upload.php', // <-- point to server-side PHP script 
           dataType: 'text',  // <-- what to expect back from the PHP script, if anything
           cache: false,
           contentType: false,
@@ -147,10 +147,10 @@
     // alert(data);
     $.ajax({
         type: 'GET',
-        url: 'http://'+window.location.hostname+'/shl/main/addFormAttach?link='+data+'&desc='+imgDe,
+        url: 'http://'+window.location.hostname+'/rstl_pm/main/addFormAttach?link='+data+'&desc='+imgDe,
         success: function(data) {
            alert(data);
-          $("#reloadDiv").load("http://"+window.location.hostname+"/shl/main/getForms");
+          $("#reloadDiv").load("http://"+window.location.hostname+"/rstl_pm/main/getForms");
           
           var fade_in = function() {
           // $(".alert").fadeOut().empty();
